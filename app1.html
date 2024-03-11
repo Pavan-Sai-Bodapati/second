@@ -1,0 +1,29 @@
+<html>
+    <head>
+      <Link rel="stylesheet"  href="../boot strap/bootstrap.css"> 
+      <Link rel="stylesheet"  href="../boot strap/bootstrap.bundle.js">
+        <Link rel="stylesheet"  href="../boot strap/jquery.js">
+        <style>
+      
+        </style>
+  <script>
+  
+    function aa()
+    {
+        var sum=0;
+        var a=document.getElementById("a").value;
+        for(var i=0;i<a.length;i++)
+        {
+        sum=sum+parseInt(a[i]);
+        }
+        document.getElementById("b").innerHTML=sum;
+    }
+</script>
+  </head>
+
+  <body>
+     <input type="text" id="a" onkeyup="aa()">
+    <h1 id="b"></h1>
+
+  </body>
+</html>
